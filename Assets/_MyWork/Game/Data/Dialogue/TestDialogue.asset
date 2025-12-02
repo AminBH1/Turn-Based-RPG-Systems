@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8049084662026606730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: f35ef2f7-e330-4a3a-acc3-c4cab94f65ab
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: you don't look like you're form around here
+  childIDList:
+  - c4658374-8dd8-41a1-96b2-9a103828a310
+  - 4d9b2147-f0b0-40f7-9e29-efb749240126
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 651.2
+    y: 135.20001
+    width: 200
+    height: 112.048004
+--- !u!114 &-7538382397399391761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: c4658374-8dd8-41a1-96b2-9a103828a310
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: I've lived here my entire life
+  childIDList:
+  - ab1ac57f-2d76-4839-8da9-a0c83125317f
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 380.80002
+    y: 256.80002
+    width: 200
+    height: 97.528
+--- !u!114 &-5782450954758055198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: ab1ac57f-2d76-4839-8da9-a0c83125317f
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: Oh really then you must know mr soulman
+  childIDList:
+  - a0f6710c-a4cf-4bb9-9040-5cc0cc6bcb46
+  - 4667db84-17c6-439c-a79f-e311283af2e5
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 282.4
+    y: 373.6
+    width: 200
+    height: 112.048004
+--- !u!114 &-4860142698056986366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 6cb9abff-659d-4ee0-8428-d83040ed8e8c
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: newton eh? I heard there is a trouble brewing there
+  childIDList:
+  - 553af711-eb05-4456-afb8-a04af60299e6
+  - 5769b5b0-3522-440f-99ea-50795c9b2469
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 867.2
+    y: 359.19998
+    width: 200
+    height: 112.048004
+--- !u!114 &-1376320794103912476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 5769b5b0-3522-440f-99ea-50795c9b2469
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: did I say newton? I meant stromville
+  childIDList:
+  - ab1ac57f-2d76-4839-8da9-a0c83125317f
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 958.4001
+    y: 488.8
+    width: 200
+    height: 112.048004
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed98de623b637a42ac50ae8da7c24ff, type: 3}
+  m_Name: TestDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  nodeList:
+  - {fileID: 1180113891340597389}
+  - {fileID: -8049084662026606730}
+  - {fileID: -7538382397399391761}
+  - {fileID: 4035555690311447994}
+  - {fileID: -5782450954758055198}
+  - {fileID: 2494609167810657984}
+  - {fileID: 6964354152913280576}
+  - {fileID: 1860163669268609168}
+  - {fileID: 4976001563803914610}
+  - {fileID: -4860142698056986366}
+  - {fileID: 6085982383056685880}
+  - {fileID: -1376320794103912476}
+  newNodeOffsetPosition: {x: 0, y: 100}
+--- !u!114 &1180113891340597389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: fbdbc2f5-ebec-49ee-b341-8bb190f5f7c2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: Hey you wait
+  childIDList:
+  - f35ef2f7-e330-4a3a-acc3-c4cab94f65ab
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 659.2
+    y: 16.800001
+    width: 200
+    height: 97.528
+--- !u!114 &1860163669268609168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 4667db84-17c6-439c-a79f-e311283af2e5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: Who
+  childIDList:
+  - 32a2c4a4-3d48-47ae-a3e5-f7a05888e2a1
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 346.4
+    y: 511.2
+    width: 200
+    height: 97.528
+--- !u!114 &2494609167810657984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: a0f6710c-a4cf-4bb9-9040-5cc0cc6bcb46
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: mr browler is a good friend of mine
+  childIDList:
+  - 5bce9647-e4e0-4a54-a368-f630507358ef
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 105.600006
+    y: 503.19995
+    width: 200
+    height: 112.048004
+--- !u!114 &4035555690311447994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 4d9b2147-f0b0-40f7-9e29-efb749240126
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: I came here from NewTon
+  childIDList:
+  - 6cb9abff-659d-4ee0-8428-d83040ed8e8c
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 867.2
+    y: 259.19998
+    width: 200
+    height: 97.528
+--- !u!114 &4976001563803914610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 32a2c4a4-3d48-47ae-a3e5-f7a05888e2a1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: dont worry about it say, you have food?
+  childIDList: []
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 346.4
+    y: 611.2
+    width: 200
+    height: 112.048004
+--- !u!114 &6085982383056685880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 553af711-eb05-4456-afb8-a04af60299e6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: 'I havent heard any trouble
+
+'
+  childIDList:
+  - 32a2c4a4-3d48-47ae-a3e5-f7a05888e2a1
+  isPlayerSpeaking: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 715.2
+    y: 484.79996
+    width: 200
+    height: 112.048004
+--- !u!114 &6964354152913280576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6a8c0df1d4b074582a57553a0308bc, type: 3}
+  m_Name: 5bce9647-e4e0-4a54-a368-f630507358ef
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNodeSO
+  nodeText: you liar there Aint no mr Browler I made him up
+  childIDList: []
+  isPlayerSpeaking: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 147.20001
+    y: 611.19995
+    width: 200
+    height: 112.048004

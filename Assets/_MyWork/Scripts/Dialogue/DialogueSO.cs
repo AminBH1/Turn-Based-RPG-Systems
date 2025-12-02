@@ -23,6 +23,30 @@ public class DialogueSO : ScriptableObject, ISerializationCallbackReceiver {
         return nodeList;
     }
 
+    public DialogueNodeSO GetRootNode() {
+        return nodeList[0];
+    }
+
+    public IEnumerable<DialogueNodeSO> GetChoiceNodeList(DialogueNodeSO parentNode) {
+        foreach (string childID in parentNode.GetChildIDList()) {
+            if (lookupNodeByID.ContainsKey(childID)) {
+                if (lookupNodeByID[childID].IsPlayerSpeaking()) {
+                    yield return lookupNodeByID[childID];
+                }
+            }
+        }        
+    }
+
+    public IEnumerable<DialogueNodeSO> GetNPCNodeList(DialogueNodeSO parentNode) {
+        foreach (string childID in parentNode.GetChildIDList()) {
+            if (lookupNodeByID.ContainsKey(childID)) {
+                if (!lookupNodeByID[childID].IsPlayerSpeaking()) {
+                    yield return lookupNodeByID[childID];
+                }
+            }
+        }
+    }
+
 
 #if UNITY_EDITOR
 
@@ -66,9 +90,11 @@ public class DialogueSO : ScriptableObject, ISerializationCallbackReceiver {
         }
 
         if (AssetDatabase.GetAssetPath(this) != "") {
-            foreach (DialogueNodeSO node in nodeList) {
-                if (AssetDatabase.GetAssetPath(node) == "") {
-                    AssetDatabase.AddObjectToAsset(node, this);
+            if (nodeList != null) {
+                foreach (DialogueNodeSO node in nodeList) {
+                    if (AssetDatabase.GetAssetPath(node) == "") {
+                        AssetDatabase.AddObjectToAsset(node, this);
+                    }
                 }
             }
         }
@@ -86,4 +112,6 @@ public class DialogueSO : ScriptableObject, ISerializationCallbackReceiver {
             }
         }
     }
+
+
 }
