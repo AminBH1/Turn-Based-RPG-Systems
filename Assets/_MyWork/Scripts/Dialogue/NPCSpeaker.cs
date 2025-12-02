@@ -7,7 +7,7 @@ public class NPCSpeaker : MonoBehaviour, IInteractable {
     [SerializeField] private DialogueSO dialogueSO;
     [SerializeField] private string npcName;
 
-    public void Interact() {
+    public void Interact(Player player) {
         dialogueHandler.StartDialogue(dialogueSO, this);
     }
 
