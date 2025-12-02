@@ -69,7 +69,13 @@ public class DialogueEditor : EditorWindow {
         if (selectedDialogueSO == null) {
             Debug.Log("Please Select a Dialogue");
         } else {
-            SetupTextAreaStyle();
+
+            if (textAreaStyle == null) {
+                textAreaStyle = new GUIStyle(EditorStyles.textArea);
+                textAreaStyle.wordWrap = true;
+                Debug.Log("yes");
+            }
+
             scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
             Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
@@ -195,6 +201,7 @@ public class DialogueEditor : EditorWindow {
             } else {
                 draggingCanvas = true;
                 draggingCanvasOffset = Event.current.mousePosition + scrollPosition;
+                Selection.activeObject = selectedDialogueSO;
             }
         } else if (Event.current.type == EventType.MouseDrag && draggingNode != null) {
             draggingNode.SetNodePosition(Event.current.mousePosition + draggingNodeOffset);
@@ -218,13 +225,5 @@ public class DialogueEditor : EditorWindow {
             }
         }
         return null;
-    }
-
-
-    private void SetupTextAreaStyle() {
-        if (textAreaStyle == null) {
-            textAreaStyle = new GUIStyle(EditorStyles.textArea);
-            textAreaStyle.wordWrap = true;
-        }
     }
 }
